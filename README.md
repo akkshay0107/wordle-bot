@@ -5,22 +5,28 @@ An entropy based Wordle guessing bot
 ## Installation
 
 1. Clone the repo to a local directory
+
 ```commandline
 git clone https://github.com/akkshay0107/wordle-bot.git
 ```
+
 2. Install the necessary Python packages
+
 ```commandline
 python -m pip install numpy
 ```
+
 3. Run the script to start a round of Wordle
+
 ```commandline
 python wordle_bot.py
 ```
-## Example 
+
+## Example
 
 Example of the bot being used to solve Wordle #625
 
-```commandline
+```
 python wordle_bot.py
 
 Welcome to Wordle Bot!
@@ -45,22 +51,30 @@ Enter guess : pinky
 Enter result : 2 2 2 2 2
 Your guess is the correct answer
 ```
+
 ## Statistics
 
 1. When the bot was run on a randomly selected answer 15000 times
+
 ```
 Mean Score = 3.7225006773232185
 Standard Deviation = 0.9327163115837637
 Failure rate = 1.5733333333333377%
 ```
+
 ![plot](./img/random_run.png)
+
 2. When the bot was run on each possible answer exactly once
+
 ```
 Mean Score = 3.725032996040475
 Standard Deviation = 0.9236458733233283
 Failure rate = 1.5591165006496266%
 ```
-![plot](./img/sequential_run.png)
-### Bot's Preferred Starting Word
 
-On the new list of allowed words, the bot has determined "raise" to be the word giving the most information in exactly one turn.
+![plot](./img/sequential_run.png)
+
+### Bots Preferred Starting Word
+
+On the new list of allowed words, the bot has determined "raise" to be the word giving the most information in exactly
+one turn.
