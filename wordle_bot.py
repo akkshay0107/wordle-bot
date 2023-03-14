@@ -31,13 +31,13 @@ def is_invalid(guess: str) -> bool:
 
 def main():
     starting_guide = """
-    Welcome to Wordle Bot!
-    When the computer asks for a result, input it as 5 separate numbers with a space in between each
-    0 = grey square
-    1 = yellow square
-    2 = green square
-    eg: ⬛⬛🟩🟨🟨 ("BBGYY") should be inputted as 0 0 2 1 1 in the program
-    """
+Welcome to Wordle Bot!
+When the computer asks for a result, input it as 5 separate numbers with a space in between each
+0 = grey square
+1 = yellow square
+2 = green square
+eg: ⬛⬛🟩🟨🟨 ("BBGYY") should be inputted as 0 0 2 1 1 in the program
+"""
     print(starting_guide)
     print("Start a new game ? (Y/n)")
     flag = input().strip()[0].lower() == 'y'
